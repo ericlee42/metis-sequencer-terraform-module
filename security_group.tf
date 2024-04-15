@@ -38,5 +38,5 @@ resource "aws_vpc_security_group_ingress_rule" "themis-p2p-tcp" {
 resource "aws_vpc_security_group_egress_rule" "sequencer-output" {
   ip_protocol       = "-1"
   cidr_ipv4         = "0.0.0.0/0"
-  security_group_id = aws_security_group.sequencer
+  security_group_id = aws_security_group.sequencer.id
 }
