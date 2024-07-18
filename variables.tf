@@ -58,7 +58,7 @@ variable "l2geth-node-group-taint" {
   default = {
     "l2geth" : {
       effect = "NO_SCHEDULE"
-      key    = "sequencer.metis.io"
+      key    = "node.metis.io"
       value  = "l2geth"
     }
   }
@@ -76,7 +76,7 @@ variable "themis-node-group-taint" {
   default = {
     "themis" : {
       effect = "NO_SCHEDULE"
-      key    = "sequencer.metis.io"
+      key    = "node.metis.io"
       value  = "themis"
     }
   }
