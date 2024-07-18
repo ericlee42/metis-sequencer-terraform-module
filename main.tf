@@ -30,7 +30,7 @@ resource "aws_eks_node_group" "l2geth" {
 
   version         = var.k8s-version
   ami_type        = var.ami-type
-  release_version = var.ami-version
+  instance_types = [var.instance-type]
 
   # the default is 20, that's should enough
   # disk_size = 20
@@ -80,7 +80,7 @@ resource "aws_eks_node_group" "themis" {
 
   version         = var.k8s-version
   ami_type        = var.ami-type
-  release_version = var.ami-version
+  instance_types = [var.instance-type]
 
   # the default is 20, that's should enough
   # disk_size = 20
