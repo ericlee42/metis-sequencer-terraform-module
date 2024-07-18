@@ -22,8 +22,7 @@ variable "k8s-ns-name" {
 }
 
 variable "eks-primary-security-group-id" {
-  description = "the primary security group id of your eks, it will added to node group"
-  nullable    = true
+  description = "the primary security group id of your eks, it will added to node group. if set as null, creation of node group will be failed."
 }
 
 variable "k8s-version" {
